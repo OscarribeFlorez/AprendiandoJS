@@ -46,8 +46,55 @@ console.log(miVarible);
 miVarible="oscar uribe florez";
 console.log(miVarible);
 console.log(a)
+// arreglos permiten guardar varios datos en una sola variable 
+var miArreglo=["oscar", 39, "pedro",45]
+console.log(miArreglo);
+var estudiantes =["oscar", "carolina", "pedro", "saray"];
+console.log(estudiantes);
+// arreglos anidados es un arreglor dentro de otro arreglo 
+var listaEstudiantes=[["nora",97],["carlos",87], ["pedro",45],["andrea",35]];
+console.log(listaEstudiantes);
+//para aceder a un elemento de la lista puntual se puede colocar de la siguiente forma 
+console.log(listaEstudiantes[0][1]);//de estos arreglos podemos definir que el primer indice es el del 
+                                   //areglo principal y el segundo es del arreglo interno 
+
+//como agregar elemtos a un arreglo 
+// al principio de con la utilizacion de un metodo 
+//metodo push
+var estaciones= ["invierno","otoño","primavera"];
+estaciones.push ("verano");//agrega elementos al final del arreglo 
+console.log(estaciones);
+// metodo pop
+var estacion;
+estacion=estaciones.pop();//remueve el ultimo elemto del arreglo pero lo retorna pora ser agregado a una varible 
+console.log(estaciones);//muestra el arreglor
+console.log(estacion);//muestar lo que guardo en la varible 
+// metodo shift
+estaciones.shift();//nos permite remover el primer valor del arreglo 
+console.log(estaciones);
+// metodo unshift
+estaciones.unshift("verano");// agregamos al principio del arreglo 
+console.log(estaciones);
+//concatwewnar cadenas con la utilizacion de arreglos anidados con estos ejemplos 
+console.log("el estudiante " + listaEstudiantes[0][0]+ " saco la nota de " + listaEstudiantes[0][1]);
+console.log("el estudiante " + listaEstudiantes[1][0]+ " saco la nota de " + listaEstudiantes[1][1]);
+console.log("el estudiante " + listaEstudiantes[2][0]+ " saco la nota de " + listaEstudiantes[2][1]);
+console.log("el estudiante " + listaEstudiantes[3][0]+ " saco la nota de " + listaEstudiantes[3][1]);
+// funciones en java 
+function mostrarMensaje(){
+console.log("holamundo")
+
+};
+mostrarMensaje();
+
+
+
+
 
 </script>
+
+
+
 
 
 
